@@ -1,0 +1,246 @@
+<!-- 
+Nombre: Funciones en CSS
+Curso: CSS desde 0 vídeo 30
+URL: 
+Author: Webcreación
+Para: Curso CSS desde 0 vídeo 30 - Funciones en css
+Legal: imágenes utilizadas - Pixabay.com
+Version: 1.0.0
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Grid Functions</title>
+	<style>
+		/*GENERAL*/
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+		body {
+			font-family: sans-serif;
+		}
+		/******************************************************************************** Sección grid_functions ********************************************************************************/
+		/*CABECERA*/
+		header.cabecera {
+			padding: 50px;
+			letter-spacing: 3px;
+		}
+		header.cabecera > h1 {
+			font-size: 4rem;
+		}
+		header.cabecera span {
+			color: darkseagreen;
+		}
+		
+/*CONTENEDOR GRID*/
+.grid_container {
+	list-style: none;
+	padding: 10px;
+	display: grid;
+	grid-gap: 10px;
+	/*
+		máximo => 350 px
+		mínimo => 200 px
+	*/
+	grid-template-columns: repeat(2, min(300px));
+
+
+}
+		header.articulo {
+			border-radius: 10px 10px 0px 0px;
+			height: 200px;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			
+		}	
+		
+		.triangulo {
+			background-color: #eee;
+			width: 20px;
+			height: 20px;
+			height: 20px;
+			transform: rotate(44deg);
+			position: relative;
+			top: 10px;
+			
+			
+		}
+		header.articulo > h3 {
+			text-align: center;
+		}
+		article.articulo {
+			background-color: #eee;
+			border: 1px solid #bbb;
+			border-radius: 10px;
+			padding-bottom: 20px;
+		}
+		header.articulo {
+			background-size: cover;
+		}
+		.uno {
+			background-image: url(1.jpg);
+		}
+		.dos {
+			background-image: url(2.jpg);
+		}
+		.tres {
+			background-image: url(3.jpg);
+		}
+		.cuatro {
+			background-image: url(4.jpg);
+		}
+		.cinco {
+			background-image: url(5.jpg);
+		}
+		.seis {
+			background-image: url(6.jpg);
+		}
+		.siete {
+			background-image: url(7.jpg);
+		}
+		.ocho {
+			background-image: url(8.jpg);
+		}
+		.nueve {
+			background-image: url(9.jpg);
+		}
+		.diez {
+			background-image: url(10.jpg);
+		}
+		.contenido {
+			padding: 10px;
+			text-align: center;
+		}
+		.contenido > * {
+			margin-bottom: 10px;
+		}
+		
+		
+		.boton {
+			width: 100px;
+			background-color: darkseagreen;			
+			text-align: center;
+			margin: auto;
+			padding: 5px;
+			border-radius: 5px;
+			
+		}
+		
+	</style>
+</head>
+<body>
+<section class="grid_functions">
+	<header class="cabecera">
+		<h1>repeat() & <span>minmax()</span></h1>
+		<p>FUNCIONES ÚTILES EN <span>GRID</span></p>
+	</header>
+	<div class="grid_container">
+		<article class="articulo">
+			<header class="articulo uno">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 01</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+		<article class="articulo">
+			<header class="articulo dos">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 02</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+		<article class="articulo">
+			<header class="articulo tres">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 03</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+		<article class="articulo">
+			<header class="articulo cuatro">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 04</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+		<article class="articulo">
+			<header class="articulo cinco">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 05</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+		<article class="articulo">
+			<header class="articulo seis">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 06</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+		<article class="articulo">
+			<header class="articulo siete">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 07</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+		<article class="articulo">
+			<header class="articulo ocho">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 08</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+		<article class="articulo">
+			<header class="articulo nueve">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 09</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+		<article class="articulo">
+			<header class="articulo diez">
+				<div class="triangulo"></div>
+			</header>
+			<div class="contenido">
+				<h2>Art 10</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi impedit neque laudantium inventore temporibus rerum eius reiciendis, maiores facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quaerat.</p>
+			</div>
+			<div class="boton">Lee más</div>
+		</article>
+	</div> <!-- CONTENEDOR GRID -->
+</section>
+</body>
+</html>
