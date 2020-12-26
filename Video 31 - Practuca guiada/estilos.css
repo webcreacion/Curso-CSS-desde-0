@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+:root {
+	--color-claro: #F0F3F5;
+	--color-medio: #71979C;
+	--color-oscuro: #404E5C;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Raleway', sans-serif;
+	
+}
+
+body {
+	font-weight: 400;
+}
+.boton {
+	background-color: var(--color-medio);
+	width: 150px;
+	text-align: center;
+	border-radius: 30px;
+	padding: 7px !important;
+	font-size: 1.2rem;
+	color: var(--color-claro) !important;
+/*	margin: 10px auto;*/
+	outline: 0px;
+	border: 0px;
+	cursor: pointer;
+}
+.boton:hover {
+	background-color: var(--color-oscuro);
+	
+	transition: .5s;
+}
+/*CABECERA*/
+header.cabecera {
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,07)),url(img/header.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.logo {
+	height: 80px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 20px;
+	border-bottom: 1px solid black;
+}
+.logo > img {
+	height: 50px;
+}
+.logo > img[src="img/logo2.png"]{
+	display: none;
+}
+.logo > label {
+	color: var(--color-claro);
+	background-color: var(--color-oscuro);
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	cursor: pointer;
+}
+nav.menu {
+	background-color: var(--color-claro);
+	display: none;
+}
+nav.menu  li {
+	list-style: none;
+	border-bottom: 1px solid white;
+	
+}
+nav.menu li:last-of-type{
+	border-bottom: none;
+
+}
+
+nav.menu a {
+	color: var(--color-oscuro);
+	text-decoration: none;
+	display: block;
+	padding: 15px;
+	font-size: 1.5rem;
+}
+nav.menu a:hover {
+	background-color: var(--color-medio);
+	color: var(--color-claro);
+	transition: .5s;
+}
+#menu {
+	display: none;
+}
+#menu:checked + .menu {
+	display: block;
+}
+/*Banner*/
+.banner {
+	
+	color: var(--color-claro);
+	padding: 40px;
+}
+.titulo > * {
+	margin-bottom: 1rem;
+}
+.titulo > h3{
+	font-weight: 400;
+	font-size: 1.8rem;
+	
+}
+.titulo > h1 {
+	font-size: 2.8em;
+	font-weight: 900;
+	color: white;
+}
+h1 > span {
+	font-weight: 400;
+}
+.titulo > p {
+	font-size: 1.2rem;
+	line-height: 26px;
+	
+}
+::placeholder {
+	color: var(--color-medio);
+}
+.formulario {
+	background-color: var(--color-claro);
+	
+}
+.formulario > form {
+	padding: 10px;
+}
+.formulario > h3 {
+	padding: 30px 20px;
+	font-weight: 400;
+}
+.formulario > h3:first-of-type {
+	background-color: var(--color-claro);
+	color: var(--color-oscuro);
+	padding: 30px 20px;
+	margin-bottom: 10px;
+	
+}
+.formulario > h3:last-of-type {
+	background-color: var(--color-medio);
+	
+}
+form.contacto > input[name], textarea{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+
+	
+	
+}
+input[type="reset"] {
+	background-color: var(--color-oscuro);
+}
+input[type="reset"]:hover {
+	background-color: var(--color-medio);
+}
+
+@media (min-width:780px){
+	.banner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.banner  h1 {
+		font-size: 4rem;
+	}
+	.titulo {
+		padding: 20px;
+		flex: 1 0 400px;
+		
+	}
+	.formulario {
+		flex: 0 0 300px;
+		
+	}
+	
+	input.boton {
+		margin-bottom: 5px;
+	}
+}
+
+
+
+
+/*********************************************************************************************************************TAMAÑO 1000 *********************************************************************************************************************/
+@media (min-width:1000px){
+	/*CABECERA*/
+	.contenedor_logo{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 50px;
+		
+
+	}
+.logo {
+	height: initial;
+	padding: initial;
+	border-bottom: none;
+	background-color: transparent;
+}
+.logo > img {
+	height: 60px;
+}
+.logo > img[src="img/logo2.png"]{
+	display: initial;
+}
+.logo > img[src="img/logo1.png"]{
+	display: none;
+}
+	
+.logo > label {
+	display: none;
+}
+nav.menu {
+	background-color: initial;
+	display: initial;
+}
+nav.menu > ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav.menu  li {
+	
+	border-bottom: none;
+	
+}
+
+
+nav.menu a {
+	color: var(--color-claro);
+	padding: 15px;
+	font-size: 1.5rem;
+}
+nav.menu a:hover {
+	background-color: initial;
+	color: var(--color-medio);
+	
+}
+
+
+.banner {
+	background-image: initial;
+	background-size: cover;
+	background-position: center;
+	color: var(--color-claro);
+	padding: 40px;
+}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
